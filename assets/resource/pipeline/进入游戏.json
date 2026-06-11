@@ -1,0 +1,91 @@
+{
+    "$__mpe_config_进入游戏": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -833,
+                "y": 294,
+                "zoom": 0.86
+            },
+            "filename": "进入游戏",
+            "version": "v1.6.1"
+        }
+    },
+    "进入游戏开始": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.lilithgame.igame.android.cn"
+            }
+        },
+        "next": [
+            "开始进入游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1209,
+                "y": -85
+            }
+        }
+    },
+    "开始进入游戏": {
+        "timeout": -1,
+        "next": [
+            "进入游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1495,
+                "y": -91
+            }
+        }
+    },
+    "进入游戏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    224,
+                    1020,
+                    285,
+                    67
+                ],
+                "expected": [
+                    "开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "等待游戏加载"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1755,
+                "y": -91
+            }
+        }
+    },
+    "等待游戏加载": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2015,
+                "y": -91
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_进入游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2275,
+                "y": -91
+            }
+        }
+    }
+}

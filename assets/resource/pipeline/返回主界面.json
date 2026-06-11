@@ -1,0 +1,163 @@
+{
+    "$__mpe_config_返回主界面": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1781140551484,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\返回主界面.json",
+            "savedViewport": {
+                "x": -1369,
+                "y": 140,
+                "zoom": 0.65
+            },
+            "filename": "返回主界面",
+            "version": "v1.6.1"
+        }
+    },
+    "下方点击关闭方式": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    168,
+                    1186,
+                    367,
+                    92
+                ],
+                "expected": [
+                    "关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3104,
+                "y": 378
+            }
+        }
+    },
+    "判断是否在主界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    1142,
+                    155,
+                    137
+                ],
+                "expected": [
+                    "当前进度"
+                ],
+                "threshold": 0.8
+            }
+        },
+        "next": [
+            "已经位于主界面-任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3122,
+                "y": 16
+            }
+        }
+    },
+    "尝试按Esc退出": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3091,
+                "y": 671
+            }
+        }
+    },
+    "已经位于主界面-任务结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3461,
+                "y": 48
+            }
+        }
+    },
+    "是不是退出过头了": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    184,
+                    570,
+                    360,
+                    101
+                ],
+                "expected": [
+                    "退出游戏"
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "next": [
+            "确认取消退出游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3118,
+                "y": -337
+            }
+        }
+    },
+    "确认取消退出游戏": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    310,
+                    731,
+                    365,
+                    207
+                ],
+                "template": [
+                    "叉号图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3416,
+                "y": -360
+            }
+        }
+    },
+    "返回主界面开始": {
+        "post_delay": 3000,
+        "timeout": -1,
+        "next": [
+            "[JumpBack]是不是退出过头了",
+            "判断是否在主界面",
+            "[JumpBack]下方点击关闭方式",
+            "[JumpBack]尝试按Esc退出"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2667,
+                "y": -56
+            }
+        }
+    }
+}

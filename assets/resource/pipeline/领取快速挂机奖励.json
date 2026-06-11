@@ -1,0 +1,184 @@
+{
+    "$__mpe_config_领取快速挂机奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1781141126684,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\领取快速挂机奖励.json",
+            "savedViewport": {
+                "x": -9069,
+                "y": 296,
+                "zoom": 0.86
+            },
+            "filename": "领取快速挂机奖励",
+            "version": "v1.6.1"
+        }
+    },
+    "$__mpe_external_返回主界面开始_领取快速挂机奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 11844,
+                "y": 132
+            }
+        }
+    },
+    "开始领取快速挂机奖励": {
+        "next": [
+            "选择挂机界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9626,
+                "y": -188
+            }
+        }
+    },
+    "开始领取快速挂机宝箱": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    253,
+                    677,
+                    224,
+                    86
+                ],
+                "expected": [
+                    "收获"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "要不要使用一次快速挂机",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10817,
+                "y": -107
+            }
+        }
+    },
+    "选择快速挂机的宝箱": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    208,
+                    836,
+                    318,
+                    182
+                ],
+                "template": [
+                    "快速挂机图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始领取快速挂机宝箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10415,
+                "y": -366
+            }
+        }
+    },
+    "选择挂机界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    9,
+                    1196,
+                    116,
+                    79
+                ],
+                "expected": [
+                    "当前进度"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "选择快速挂机的宝箱",
+            "开始领取快速挂机宝箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10007,
+                "y": -121
+            }
+        }
+    },
+    "要不要使用一次快速挂机": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    596,
+                    969,
+                    90,
+                    35
+                ],
+                "expected": [
+                    "1",
+                    "2"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "确认快速挂机奖励",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11096,
+                "y": -343
+            }
+        }
+    },
+    "确认快速挂机奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    509,
+                    766,
+                    164,
+                    167
+                ],
+                "template": [
+                    "对勾确认图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11457,
+                "y": -445
+            }
+        }
+    }
+}

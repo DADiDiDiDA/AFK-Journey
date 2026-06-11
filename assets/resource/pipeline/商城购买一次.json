@@ -1,0 +1,214 @@
+{
+    "$__mpe_config_商城购买一次": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1781140338642,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\商城购买一次.json",
+            "savedViewport": {
+                "x": -4090,
+                "y": 260,
+                "zoom": 0.57
+            },
+            "filename": "商城购买一次",
+            "version": "v1.6.1"
+        }
+    },
+    "$__mpe_external_返回主界面开始_商城购买一次": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9774,
+                "y": 360
+            }
+        }
+    },
+    "商城购买一次开始": {
+        "next": [
+            "进入主界面-商城购买一次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7181,
+                "y": -282
+            }
+        }
+    },
+    "确认商城物品购买": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    256,
+                    1143,
+                    285,
+                    106
+                ],
+                "expected": [
+                    "购买"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9306,
+                "y": -22
+            }
+        }
+    },
+    "进入主界面-商城购买一次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    608,
+                    1166,
+                    108,
+                    111
+                ],
+                "template": [
+                    "主菜单特征.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "选择进入商城界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7674,
+                "y": -247
+            }
+        }
+    },
+    "选择工会商店开始": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    14,
+                    156,
+                    103,
+                    789
+                ],
+                "expected": [
+                    "公会"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "选择每日商店商品-全英雄",
+            "选择每日商店商品-史诗招募",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8422,
+                "y": 83
+            }
+        }
+    },
+    "选择每日商店商品-全英雄": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    149,
+                    469,
+                    570,
+                    250
+                ],
+                "template": [
+                    "全英雄招募图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "确认商城物品购买"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8798,
+                "y": -507
+            }
+        }
+    },
+    "选择每日商店商品-史诗招募": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    149,
+                    469,
+                    570,
+                    250
+                ],
+                "template": [
+                    "史诗招募图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "确认商城物品购买"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8872,
+                "y": -147
+            }
+        }
+    },
+    "选择进入商城界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    37,
+                    901,
+                    656,
+                    81
+                ],
+                "expected": [
+                    "商店"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "选择工会商店开始",
+            "进入主界面-商城购买一次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8102,
+                "y": -152
+            }
+        }
+    }
+}

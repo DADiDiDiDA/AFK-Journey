@@ -1,0 +1,118 @@
+{
+    "$__mpe_config_领取并赠送友情点": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -2893,
+                "y": 338,
+                "zoom": 0.57
+            },
+            "filename": "领取并赠送友情点",
+            "version": "v1.6.1"
+        }
+    },
+    "领取并赠送友情点开始": {
+        "next": [
+            "进入主菜单-友情点"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5421,
+                "y": -102
+            }
+        }
+    },
+    "进入主菜单-友情点": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    608,
+                    1177,
+                    107,
+                    101
+                ],
+                "template": [
+                    "主菜单特征.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择社交界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5794,
+                "y": -55
+            }
+        }
+    },
+    "选择社交界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    16,
+                    1057,
+                    687,
+                    71
+                ],
+                "expected": [
+                    "社交"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "领取并赠送友情点"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6123,
+                "y": -104
+            }
+        }
+    },
+    "领取并赠送友情点": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    293,
+                    1050,
+                    273,
+                    75
+                ],
+                "expected": [
+                    "收取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6383,
+                "y": -104
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_领取并赠送友情点": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6771,
+                "y": -51
+            }
+        }
+    }
+}

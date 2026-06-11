@@ -1,0 +1,363 @@
+{
+    "$__mpe_config_每日竞技场一次": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1757,
+                "y": 281,
+                "zoom": 0.57
+            },
+            "filename": "每日竞技场一次",
+            "version": "v1.6.1"
+        }
+    },
+    "每日竞技场一次开始": {
+        "next": [
+            "进入玩法目录界面-竞技场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2908,
+                "y": -238
+            }
+        }
+    },
+    "进入玩法目录界面-竞技场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    95,
+                    1200,
+                    498,
+                    75
+                ],
+                "expected": [
+                    "玩法"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "选择常规玩法"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3378,
+                "y": -225
+            }
+        }
+    },
+    "选择常规玩法": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    83,
+                    1076,
+                    578,
+                    72
+                ],
+                "expected": [
+                    "常规"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "选择竞技场",
+            "进入玩法目录界面-竞技场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3821,
+                "y": -272
+            }
+        }
+    },
+    "选择竞技场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    20,
+                    159,
+                    679,
+                    719
+                ],
+                "expected": [
+                    "竞技场"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "[JumpBack]关闭弹窗-竞技场",
+            "查看门票数量-竞技场",
+            "开始竞技场挑战-竞技场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4301,
+                "y": -284
+            }
+        }
+    },
+    "关闭弹窗-竞技场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    224,
+                    1137,
+                    276,
+                    115
+                ],
+                "expected": [
+                    "关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4730,
+                "y": -528
+            }
+        }
+    },
+    "查看门票数量-竞技场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    558,
+                    8,
+                    127,
+                    49
+                ],
+                "expected": [
+                    "0"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4820,
+                "y": -245
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_每日竞技场一次": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7324,
+                "y": 291
+            }
+        }
+    },
+    "开始竞技场挑战-竞技场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    379,
+                    1151,
+                    213,
+                    98
+                ],
+                "expected": [
+                    "挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择最左侧对手挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4741,
+                "y": 138
+            }
+        }
+    },
+    "选择最左侧对手挑战": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    15,
+                    790,
+                    676,
+                    250
+                ],
+                "template": [
+                    "竞技场挑战图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始等待加载"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5235,
+                "y": 208
+            }
+        }
+    },
+    "开始等待加载": {
+        "next": [
+            "确认竞技场挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5734,
+                "y": 149
+            }
+        }
+    },
+    "确认竞技场挑战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    325,
+                    1168,
+                    219,
+                    66
+                ],
+                "expected": [
+                    "战斗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 5000,
+        "timeout": -1,
+        "next": [
+            "[JumpBack]选择跳过竞技场",
+            "确认奖励-竞技场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6112,
+                "y": 113
+            }
+        }
+    },
+    "选择跳过竞技场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    629,
+                    969,
+                    79,
+                    93
+                ],
+                "expected": [
+                    "跳过"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "确认选择跳过竞技场",
+            "竞技场挑战跳过成功"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6537,
+                "y": -94
+            }
+        }
+    },
+    "确认奖励-竞技场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    247,
+                    911,
+                    232,
+                    89
+                ],
+                "expected": [
+                    "击败"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6543,
+                "y": 219
+            }
+        }
+    },
+    "确认选择跳过竞技场": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    14,
+                    587,
+                    699,
+                    388
+                ],
+                "template": [
+                    "对勾确认图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "竞技场挑战跳过成功"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6833,
+                "y": -272
+            }
+        }
+    },
+    "竞技场挑战跳过成功": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7132,
+                "y": 16
+            }
+        }
+    }
+}

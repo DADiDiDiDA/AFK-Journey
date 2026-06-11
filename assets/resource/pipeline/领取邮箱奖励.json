@@ -1,0 +1,120 @@
+{
+    "$__mpe_config_领取邮箱奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1418,
+                "y": 250,
+                "zoom": 0.75
+            },
+            "filename": "领取邮箱奖励",
+            "version": "v1.6.1"
+        }
+    },
+    "领取邮箱奖励开始": {
+        "next": [
+            "进入主菜单-领取邮箱奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2390,
+                "y": -79
+            }
+        }
+    },
+    "进入主菜单-领取邮箱奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    603,
+                    1162,
+                    112,
+                    112
+                ],
+                "template": [
+                    "主菜单特征.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "进入邮件界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2650,
+                "y": -79
+            }
+        }
+    },
+    "进入邮件界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    42,
+                    918,
+                    630,
+                    59
+                ],
+                "expected": [
+                    "邮件"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "点击领取全部-邮件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2910,
+                "y": -79
+            }
+        }
+    },
+    "点击领取全部-邮件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    391,
+                    1168,
+                    210,
+                    60
+                ],
+                "expected": [
+                    "全部"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3170,
+                "y": -79
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_领取邮箱奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3430,
+                "y": -79
+            }
+        }
+    }
+}
