@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1781141126684,
+            "lastSyncTime": 1781141923705,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\领取快速挂机奖励.json",
             "savedViewport": {
-                "x": -9069,
-                "y": 296,
-                "zoom": 0.86
+                "x": -6697,
+                "y": 362,
+                "zoom": 0.65
             },
             "filename": "领取快速挂机奖励",
             "version": "v1.6.1"
@@ -64,6 +64,65 @@
             }
         }
     },
+    "确认快速挂机奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    509,
+                    766,
+                    164,
+                    167
+                ],
+                "template": [
+                    "对勾确认图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11457,
+                "y": -445
+            }
+        }
+    },
+    "要不要使用一次快速挂机": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    596,
+                    969,
+                    90,
+                    35
+                ],
+                "expected": [
+                    "1",
+                    "2"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "确认快速挂机奖励",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11096,
+                "y": -343
+            }
+        }
+    },
     "选择快速挂机的宝箱": {
         "recognition": {
             "type": "TemplateMatch",
@@ -75,7 +134,8 @@
                     182
                 ],
                 "template": [
-                    "快速挂机图标.png"
+                    "快速挂机图标.png",
+                    "快速挂机奖励图标2.png"
                 ]
             }
         },
@@ -119,65 +179,6 @@
             "position": {
                 "x": 10007,
                 "y": -121
-            }
-        }
-    },
-    "要不要使用一次快速挂机": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    596,
-                    969,
-                    90,
-                    35
-                ],
-                "expected": [
-                    "1",
-                    "2"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 4000,
-        "next": [
-            "确认快速挂机奖励",
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11096,
-                "y": -343
-            }
-        }
-    },
-    "确认快速挂机奖励": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    509,
-                    766,
-                    164,
-                    167
-                ],
-                "template": [
-                    "对勾确认图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11457,
-                "y": -445
             }
         }
     }
