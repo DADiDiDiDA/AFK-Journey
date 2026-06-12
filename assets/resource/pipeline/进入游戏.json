@@ -3,29 +3,23 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1781222762153,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\进入游戏.json",
             "savedViewport": {
-                "x": -833,
-                "y": 294,
-                "zoom": 0.86
+                "x": -1572,
+                "y": 297,
+                "zoom": 0.99
             },
             "filename": "进入游戏",
             "version": "v1.6.1"
         }
     },
-    "进入游戏开始": {
-        "action": {
-            "type": "StartApp",
-            "param": {
-                "package": "com.lilithgame.igame.android.cn"
-            }
-        },
-        "next": [
-            "开始进入游戏"
-        ],
+    "$__mpe_external_返回主界面开始_进入游戏": {
         "$__mpe_code": {
             "position": {
-                "x": 1209,
-                "y": -85
+                "x": 2396,
+                "y": -124
             }
         }
     },
@@ -36,8 +30,19 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1495,
-                "y": -91
+                "x": 1341,
+                "y": -192
+            }
+        }
+    },
+    "等待游戏加载": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2029,
+                "y": -173
             }
         }
     },
@@ -56,6 +61,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 4000,
         "action": {
             "type": "Click"
         },
@@ -64,27 +70,25 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1755,
-                "y": -91
+                "x": 1668,
+                "y": -201
             }
         }
     },
-    "等待游戏加载": {
+    "进入游戏开始": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.lilithgame.igame.android.cn"
+            }
+        },
         "next": [
-            "返回主界面开始"
+            "开始进入游戏"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2015,
-                "y": -91
-            }
-        }
-    },
-    "$__mpe_external_返回主界面开始_进入游戏": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2275,
-                "y": -91
+                "x": 1012,
+                "y": -138
             }
         }
     }
