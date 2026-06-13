@@ -3,13 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1781222762153,
+            "lastSyncTime": 1781321874404,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\进入游戏.json",
+            "isDeleted": true,
             "savedViewport": {
-                "x": -1572,
-                "y": 297,
-                "zoom": 0.99
+                "x": -295,
+                "y": 410,
+                "zoom": 0.49
             },
             "filename": "进入游戏",
             "version": "v1.6.1"
@@ -24,14 +25,30 @@
         }
     },
     "开始进入游戏": {
+        "post_delay": 4000,
         "timeout": -1,
         "next": [
-            "进入游戏"
+            "进入游戏",
+            "[JumpBack]是不是没有打开游戏呢"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1341,
-                "y": -192
+                "x": 1220,
+                "y": -278
+            }
+        }
+    },
+    "是不是没有打开游戏呢": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.lilithgame.igame.android.cn"
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1728,
+                "y": -28
             }
         }
     },
@@ -41,8 +58,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2029,
-                "y": -173
+                "x": 2051,
+                "y": -407
             }
         }
     },
@@ -57,11 +74,11 @@
                     67
                 ],
                 "expected": [
-                    "开始"
+                    "开始游戏"
                 ]
             }
         },
-        "pre_wait_freezes": 4000,
+        "pre_wait_freezes": 5000,
         "action": {
             "type": "Click"
         },
@@ -70,8 +87,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1668,
-                "y": -201
+                "x": 1621,
+                "y": -690
             }
         }
     },
@@ -87,8 +104,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1012,
-                "y": -138
+                "x": 843,
+                "y": -187
             }
         }
     }

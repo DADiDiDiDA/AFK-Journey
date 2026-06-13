@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1781142139239,
+            "lastSyncTime": 1781323409093,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\每日竞技场一次.json",
             "savedViewport": {
-                "x": -5152,
-                "y": 326,
-                "zoom": 0.86
+                "x": -4038,
+                "y": 153,
+                "zoom": 0.66
             },
             "filename": "每日竞技场一次",
             "version": "v1.6.1"
@@ -18,8 +18,8 @@
     "$__mpe_external_返回主界面开始_每日竞技场一次": {
         "$__mpe_code": {
             "position": {
-                "x": 7324,
-                "y": 291
+                "x": 7565,
+                "y": 303
             }
         }
     },
@@ -129,13 +129,14 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    247,
-                    911,
-                    232,
-                    89
+                    229,
+                    810,
+                    301,
+                    263
                 ],
                 "expected": [
-                    "击败"
+                    "击败",
+                    "奖励"
                 ]
             }
         },
@@ -144,8 +145,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6526,
-                "y": 276
+                "x": 6890,
+                "y": 261
             }
         }
     },
