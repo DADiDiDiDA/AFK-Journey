@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1781141923705,
+            "lastSyncTime": 1781660857240,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\领取快速挂机奖励.json",
             "savedViewport": {
-                "x": -6697,
-                "y": 362,
-                "zoom": 0.65
+                "x": -9549,
+                "y": 464,
+                "zoom": 0.99
             },
             "filename": "领取快速挂机奖励",
             "version": "v1.6.1"
@@ -136,6 +136,9 @@
                 "template": [
                     "快速挂机图标.png",
                     "快速挂机奖励图标2.png"
+                ],
+                "threshold": [
+                    0.45
                 ]
             }
         },

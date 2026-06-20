@@ -3,12 +3,9 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1781323409093,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\每日竞技场一次.json",
             "savedViewport": {
-                "x": -4038,
-                "y": 153,
+                "x": -3639,
+                "y": 198,
                 "zoom": 0.66
             },
             "filename": "每日竞技场一次",
@@ -145,8 +142,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6890,
-                "y": 261
+                "x": 6788,
+                "y": 469
             }
         }
     },
@@ -172,6 +169,7 @@
         "timeout": -1,
         "next": [
             "[JumpBack]选择跳过竞技场",
+            "[JumpBack]确认选择上阵人数不足-竞技场",
             "确认奖励-竞技场"
         ],
         "$__mpe_code": {
@@ -297,12 +295,13 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始等待加载"
+            "开始等待加载",
+            "开始竞技场挑战-竞技场"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5235,
-                "y": 208
+                "x": 5272,
+                "y": 22
             }
         }
     },
@@ -364,6 +363,32 @@
             "position": {
                 "x": 6473,
                 "y": -175
+            }
+        }
+    },
+    "确认选择上阵人数不足-竞技场": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    14,
+                    587,
+                    699,
+                    388
+                ],
+                "template": [
+                    "对勾确认图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6625,
+                "y": 140
             }
         }
     }

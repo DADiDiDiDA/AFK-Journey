@@ -3,10 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1781660778547,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\进入游戏.json",
             "savedViewport": {
-                "x": -491,
-                "y": 520,
-                "zoom": 0.76
+                "x": -445,
+                "y": 529,
+                "zoom": 0.65
             },
             "filename": "进入游戏",
             "version": "v1.6.1"
@@ -21,7 +24,7 @@
         }
     },
     "开始进入游戏": {
-        "post_delay": 4000,
+        "post_delay": 2000,
         "timeout": -1,
         "next": [
             "进入游戏"
