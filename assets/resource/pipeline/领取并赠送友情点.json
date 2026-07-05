@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -5600,
-                "y": 313,
-                "zoom": 1
+                "x": -3899,
+                "y": 368,
+                "zoom": 0.76
             },
             "filename": "领取并赠送友情点",
-            "version": "v1.6.1"
+            "version": "v1.7.2"
         }
     },
     "领取并赠送友情点开始": {
@@ -44,7 +44,8 @@
         },
         "post_delay": 3000,
         "next": [
-            "选择社交界面"
+            "选择社交界面",
+            "领取并赠送友情点开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -77,8 +78,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6123,
-                "y": -104
+                "x": 6129,
+                "y": -436
             }
         }
     },
