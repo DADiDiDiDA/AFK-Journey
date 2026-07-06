@@ -4,18 +4,19 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -3899,
-                "y": 368,
-                "zoom": 0.76
+                "x": -3592,
+                "y": 525,
+                "zoom": 0.65
             },
             "filename": "领取并赠送友情点",
-            "version": "v1.7.2"
+            "version": "v1.7.3"
         }
     },
     "领取并赠送友情点开始": {
         "post_delay": 4000,
         "next": [
-            "进入主菜单-友情点"
+            "进入主菜单-友情点",
+            "[JumpBack]返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -45,12 +46,12 @@
         "post_delay": 3000,
         "next": [
             "选择社交界面",
-            "领取并赠送友情点开始"
+            "[JumpBack]进入主菜单-友情点_错误处理"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5794,
-                "y": -55
+                "x": 5705,
+                "y": -482
             }
         }
     },
@@ -74,12 +75,13 @@
         },
         "post_delay": 3000,
         "next": [
-            "领取并赠送友情点"
+            "领取并赠送友情点",
+            "[JumpBack]选择社交界面_错误处理"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6129,
-                "y": -436
+                "x": 6089,
+                "y": -676
             }
         }
     },
@@ -107,16 +109,68 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6383,
-                "y": -104
+                "x": 6633,
+                "y": -648
             }
         }
     },
     "$__mpe_external_返回主界面开始_领取并赠送友情点": {
         "$__mpe_code": {
             "position": {
-                "x": 6771,
-                "y": -51
+                "x": 7073,
+                "y": -57
+            }
+        }
+    },
+    "进入主菜单-友情点_错误处理": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    608,
+                    1177,
+                    107,
+                    101
+                ],
+                "template": [
+                    "主菜单特征.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6113,
+                "y": -317
+            }
+        }
+    },
+    "选择社交界面_错误处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    16,
+                    1057,
+                    687,
+                    71
+                ],
+                "expected": [
+                    "社交"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6407,
+                "y": -412
             }
         }
     }

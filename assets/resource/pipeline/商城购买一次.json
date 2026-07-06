@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1781140338642,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\商城购买一次.json",
             "savedViewport": {
-                "x": -4090,
-                "y": 260,
-                "zoom": 0.57
+                "x": -5673,
+                "y": 249,
+                "zoom": 0.75
             },
             "filename": "商城购买一次",
-            "version": "v1.6.1"
+            "version": "v1.7.3"
         }
     },
     "$__mpe_external_返回主界面开始_商城购买一次": {
@@ -118,8 +115,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8422,
-                "y": 83
+                "x": 8441,
+                "y": -144
             }
         }
     },
@@ -202,12 +199,38 @@
         "post_delay": 3000,
         "next": [
             "选择工会商店开始",
-            "进入主界面-商城购买一次"
+            "[JumpBack]选择进入商城界面_错误处理"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8102,
-                "y": -152
+                "x": 8058,
+                "y": -157
+            }
+        }
+    },
+    "选择进入商城界面_错误处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    37,
+                    901,
+                    656,
+                    81
+                ],
+                "expected": [
+                    "商店"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 8387,
+                "y": 226
             }
         }
     }

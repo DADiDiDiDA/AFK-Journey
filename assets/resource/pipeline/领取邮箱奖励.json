@@ -4,22 +4,23 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -1543,
-                "y": 212,
-                "zoom": 0.76
+                "x": -1036,
+                "y": 366,
+                "zoom": 0.57
             },
             "filename": "领取邮箱奖励",
-            "version": "v1.7.2"
+            "version": "v1.7.3"
         }
     },
     "领取邮箱奖励开始": {
         "next": [
-            "进入主菜单-领取邮箱奖励"
+            "进入主菜单-领取邮箱奖励",
+            "[JumpBack]返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2166,
-                "y": -115
+                "x": 2005,
+                "y": -5
             }
         }
     },
@@ -44,12 +45,12 @@
         "post_delay": 3000,
         "next": [
             "进入邮件界面",
-            "领取邮箱奖励开始"
+            "[JumpBack]进入主菜单-领取邮箱奖励_错误处理"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2534,
-                "y": -117
+                "x": 2212,
+                "y": -497
             }
         }
     },
@@ -73,12 +74,13 @@
         },
         "post_delay": 3000,
         "next": [
-            "点击领取全部-邮件"
+            "点击领取全部-邮件",
+            "[JumpBack]进入邮件界面_错误处理"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2873,
-                "y": -123
+                "x": 2741,
+                "y": -619
             }
         }
     },
@@ -105,8 +107,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3170,
-                "y": -79
+                "x": 3232,
+                "y": -565
             }
         }
     },
@@ -115,6 +117,58 @@
             "position": {
                 "x": 3430,
                 "y": -79
+            }
+        }
+    },
+    "进入主菜单-领取邮箱奖励_错误处理": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    603,
+                    1162,
+                    112,
+                    112
+                ],
+                "template": [
+                    "主菜单特征.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2516,
+                "y": -323
+            }
+        }
+    },
+    "进入邮件界面_错误处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    42,
+                    918,
+                    630,
+                    59
+                ],
+                "expected": [
+                    "邮件"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3032,
+                "y": -316
             }
         }
     }
