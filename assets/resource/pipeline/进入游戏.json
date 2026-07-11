@@ -3,10 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1783559771433,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\进入游戏.json",
             "savedViewport": {
-                "x": -294,
-                "y": 506,
-                "zoom": 0.76
+                "x": -451,
+                "y": 399,
+                "zoom": 1.31
             },
             "filename": "进入游戏",
             "version": "v1.7.3"
@@ -74,6 +77,12 @@
         }
     },
     "进入游戏开始": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.lilithgame.igame.android.cn/com.farlightgames.igame.SplashActivity"
+            }
+        },
         "next": [
             "开始进入游戏"
         ],

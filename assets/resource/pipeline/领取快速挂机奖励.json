@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1781660857240,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\AFK-Journey\\assets\\resource\\pipeline\\领取快速挂机奖励.json",
             "savedViewport": {
-                "x": -9549,
-                "y": 464,
-                "zoom": 0.99
+                "x": -4906,
+                "y": 508,
+                "zoom": 0.5
             },
             "filename": "领取快速挂机奖励",
-            "version": "v1.6.1"
+            "version": "v1.7.3"
         }
     },
     "$__mpe_external_返回主界面开始_领取快速挂机奖励": {
@@ -25,7 +22,8 @@
     },
     "开始领取快速挂机奖励": {
         "next": [
-            "选择挂机界面"
+            "选择挂机界面",
+            "[JumpBack]返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -59,8 +57,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10817,
-                "y": -107
+                "x": 10789,
+                "y": -415
             }
         }
     },
@@ -87,8 +85,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11457,
-                "y": -445
+                "x": 11559,
+                "y": -579
             }
         }
     },
@@ -118,8 +116,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11096,
-                "y": -343
+                "x": 11120,
+                "y": -611
             }
         }
     },
@@ -150,8 +148,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10415,
-                "y": -366
+                "x": 10457,
+                "y": -596
             }
         }
     },
@@ -180,8 +178,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10007,
-                "y": -121
+                "x": 9975,
+                "y": -439
             }
         }
     }
