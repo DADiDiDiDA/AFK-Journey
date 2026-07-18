@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -4906,
-                "y": 508,
-                "zoom": 0.5
+                "x": -4611,
+                "y": 337,
+                "zoom": 0.49
             },
             "filename": "领取快速挂机奖励",
             "version": "v1.7.3"
@@ -21,6 +21,7 @@
         }
     },
     "开始领取快速挂机奖励": {
+        "post_delay": 5000,
         "next": [
             "选择挂机界面",
             "[JumpBack]返回主界面开始"
