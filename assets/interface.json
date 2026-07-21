@@ -5,7 +5,7 @@
     "contact": "",
     "license": "MIT",
     "welcome": "欢迎使用剑与远征：启程自动化助手；不会领取每日任务奖励欧，因为次日会发邮箱里",
-    "version": "1.1.1",
+    "version": "1.1.2",
     
     "controller": [
         {
