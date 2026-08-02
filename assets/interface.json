@@ -28,31 +28,37 @@
         {
             "name": "🎮 进入游戏",
             "entry": "进入游戏开始",
+            "default_check": true,
             "description": "启动游戏并进入游戏（不可以从游戏内启动欧）"
         },
         {
             "name": "🤝 领取并赠送友情点",
             "entry": "领取并赠送友情点开始",
+            "default_check": true,
             "description": "在社交界面领取好友赠送的友情点并回赠"
         },
         {
             "name": "⚡ 领取快速挂机奖励",
             "entry": "开始领取快速挂机奖励",
+            "default_check": true,
             "description": "领取挂机收益并使用一次快速挂机次数"
         },
         {
             "name": "📧 领取邮箱奖励",
             "entry": "领取邮箱奖励开始",
+            "default_check": true,
             "description": "领取邮箱内所有奖励"
         },
         {
             "name": "🏟️ 每日竞技场一次",
             "entry": "每日竞技场一次开始",
+            "default_check": true,
             "description": "完成一次竞技场挑战（无门票时自动退出）"
         },
         {
             "name": "🛒 商城购买一次",
             "entry": "商城购买一次开始",
+            "default_check": true,
             "description": "购买公会商店-每日刷新中的全英雄招募和史诗招募物品（今日买过了会自动退出）"
         }
     ]

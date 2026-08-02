@@ -3,13 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1785628635579,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\每日竞技场一次.json",
             "savedViewport": {
-                "x": -2932,
-                "y": 105,
+                "x": -4126,
+                "y": 47,
                 "zoom": 0.65
             },
             "filename": "每日竞技场一次",
-            "version": "v1.7.3"
+            "version": "v1.7.4"
         }
     },
     "$__mpe_external_返回主界面开始_每日竞技场一次": {
@@ -56,7 +59,8 @@
                     98
                 ],
                 "expected": [
-                    "挑战"
+                    "挑战",
+                    "战斗"
                 ]
             }
         },
@@ -72,6 +76,33 @@
             "position": {
                 "x": 4741,
                 "y": 138
+            }
+        }
+    },
+    "开始竞技场挑战-竞技场_错误处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    379,
+                    1151,
+                    213,
+                    98
+                ],
+                "expected": [
+                    "挑战",
+                    "战斗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5064,
+                "y": 381
             }
         }
     },
@@ -178,6 +209,32 @@
             "position": {
                 "x": 6112,
                 "y": 113
+            }
+        }
+    },
+    "确认选择上阵人数不足-竞技场": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    14,
+                    587,
+                    699,
+                    388
+                ],
+                "template": [
+                    "对勾确认图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6625,
+                "y": 140
             }
         }
     },
@@ -306,6 +363,32 @@
             }
         }
     },
+    "选择最左侧对手挑战_错误处理": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    15,
+                    790,
+                    676,
+                    250
+                ],
+                "template": [
+                    "竞技场挑战图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6092,
+                "y": 477
+            }
+        }
+    },
     "选择竞技场": {
         "recognition": {
             "type": "OCR",
@@ -364,84 +447,6 @@
             "position": {
                 "x": 6473,
                 "y": -175
-            }
-        }
-    },
-    "确认选择上阵人数不足-竞技场": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    14,
-                    587,
-                    699,
-                    388
-                ],
-                "template": [
-                    "对勾确认图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 6625,
-                "y": 140
-            }
-        }
-    },
-    "开始竞技场挑战-竞技场_错误处理": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    379,
-                    1151,
-                    213,
-                    98
-                ],
-                "expected": [
-                    "挑战"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 5064,
-                "y": 381
-            }
-        }
-    },
-    "选择最左侧对手挑战_错误处理": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    15,
-                    790,
-                    676,
-                    250
-                ],
-                "template": [
-                    "竞技场挑战图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 6092,
-                "y": 477
             }
         }
     }
