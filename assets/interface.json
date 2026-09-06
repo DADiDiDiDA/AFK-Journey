@@ -5,7 +5,7 @@
     "contact": "",
     "license": "MIT",
     "welcome": "欢迎使用剑与远征：启程自动化助手；不会领取每日任务奖励欧，因为次日会发邮箱里",
-    "version": "1.1.3",
+    "version": "1.1.4",
     
     "controller": [
         {
@@ -29,7 +29,8 @@
             "name": "🎮 进入游戏",
             "entry": "进入游戏开始",
             "default_check": true,
-            "description": "启动游戏并进入游戏（不可以从游戏内启动欧）"
+            "description": "启动游戏并进入游戏",
+            "option": ["启动模式"]
         },
         {
             "name": "🤝 领取并赠送友情点",
@@ -61,5 +62,26 @@
             "default_check": true,
             "description": "购买公会商店-每日刷新中的全英雄招募和史诗招募物品（今日买过了会自动退出）"
         }
-    ]
+    ],
+    
+    "option": {
+        "启动模式": {
+            "type": "select",
+            "label": "启动模式",
+            "description": "选择进入游戏的方式",
+            "default_case": "no_start",
+            "cases": [
+                {
+                    "name": "need_start",
+                    "label": "🚀 启动游戏",
+                    "description": "告诉模拟器启动游戏"
+                },
+                {
+                    "name": "no_start",
+                    "label": "📋 不需要启动游戏",
+                    "description": "不用启动游戏"
+                }
+            ]
+        }
+    }
 }

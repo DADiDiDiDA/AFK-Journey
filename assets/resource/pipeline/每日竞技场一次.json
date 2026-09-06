@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785628635579,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\每日竞技场一次.json",
             "savedViewport": {
-                "x": -4126,
-                "y": 47,
-                "zoom": 0.65
+                "x": -2729,
+                "y": 71,
+                "zoom": 0.5
             },
             "filename": "每日竞技场一次",
-            "version": "v1.7.4"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_返回主界面开始_每日竞技场一次": {
@@ -165,10 +162,12 @@
                     263
                 ],
                 "expected": [
-                    "击败",
-                    "奖励"
+                    "空白处"
                 ]
             }
+        },
+        "action": {
+            "type": "Click"
         },
         "next": [
             "返回主界面开始"
@@ -199,11 +198,12 @@
             "type": "Click"
         },
         "post_delay": 5000,
-        "timeout": -1,
+        "timeout": 60000,
         "next": [
             "[JumpBack]选择跳过竞技场",
             "[JumpBack]确认选择上阵人数不足-竞技场",
-            "确认奖励-竞技场"
+            "确认奖励-竞技场",
+            "确认失败奖励-竞技场"
         ],
         "$__mpe_code": {
             "position": {
@@ -447,6 +447,34 @@
             "position": {
                 "x": 6473,
                 "y": -175
+            }
+        }
+    },
+    "确认失败奖励-竞技场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    273,
+                    1162,
+                    181,
+                    66
+                ],
+                "expected": [
+                    "空白处"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6677,
+                "y": 772
             }
         }
     }
