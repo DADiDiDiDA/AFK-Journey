@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -639,
-                "y": 108,
-                "zoom": 0.25
+                "x": -3814,
+                "y": 293,
+                "zoom": 0.66
             },
             "filename": "每日竞技场一次",
             "version": "v1.10.1"
@@ -73,8 +73,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4741,
-                "y": 138
+                "x": 4783,
+                "y": -1
             }
         }
     },
@@ -137,8 +137,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4820,
-                "y": -245
+                "x": 4823,
+                "y": -298
             }
         }
     },
@@ -297,7 +297,8 @@
         },
         "post_delay": 3000,
         "next": [
-            "选择常规玩法"
+            "选择常规玩法",
+            "[JumpBack]进入玩法目录界面-竞技场_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -327,12 +328,12 @@
         "post_delay": 3000,
         "next": [
             "选择竞技场",
-            "进入玩法目录界面-竞技场"
+            "[JumpBack]选择常规玩法_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3821,
-                "y": -272
+                "x": 3831,
+                "y": -246
             }
         }
     },
@@ -360,8 +361,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5272,
-                "y": 22
+                "x": 5219,
+                "y": -8
             }
         }
     },
@@ -413,7 +414,8 @@
         "next": [
             "[JumpBack]关闭弹窗-竞技场",
             "查看门票数量-竞技场",
-            "开始竞技场挑战-竞技场"
+            "开始竞技场挑战-竞技场",
+            "[JumpBack]选择竞技场_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -527,6 +529,86 @@
             "position": {
                 "x": 5065,
                 "y": 847
+            }
+        }
+    },
+    "进入玩法目录界面-竞技场_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    95,
+                    1200,
+                    498,
+                    75
+                ],
+                "expected": [
+                    "玩法"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3723,
+                "y": 77
+            }
+        }
+    },
+    "选择常规玩法_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    83,
+                    1076,
+                    578,
+                    72
+                ],
+                "expected": [
+                    "常规"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4123,
+                "y": 65
+            }
+        }
+    },
+    "选择竞技场_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    20,
+                    159,
+                    679,
+                    719
+                ],
+                "expected": [
+                    "竞技场"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4584,
+                "y": 347
             }
         }
     }

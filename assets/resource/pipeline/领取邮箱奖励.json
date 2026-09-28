@@ -3,24 +3,343 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790552808595,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\领取邮箱奖励.json",
             "savedViewport": {
-                "x": -1036,
-                "y": 366,
-                "zoom": 0.57
+                "x": -562,
+                "y": 423,
+                "zoom": 0.29
             },
             "filename": "领取邮箱奖励",
-            "version": "v1.7.3"
+            "version": "v2.0.3"
         }
     },
-    "领取邮箱奖励开始": {
+    "$__mpe_external_返回主界面开始_领取邮箱奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4805,
+                "y": 123
+            }
+        }
+    },
+    "单个邮件删除结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5906,
+                "y": -446
+            }
+        }
+    },
+    "寻找删除邮件按钮": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    571,
+                    213,
+                    123,
+                    214
+                ],
+                "template": [
+                    "垃圾桶图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "next": [
-            "进入主菜单-领取邮箱奖励",
-            "[JumpBack]返回主界面开始"
+            "确认删除单个邮件",
+            "[JumpBack]寻找删除邮件按钮_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2005,
-                "y": -5
+                "x": 5055,
+                "y": -847
+            }
+        }
+    },
+    "寻找删除邮件按钮_第三次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    571,
+                    213,
+                    123,
+                    214
+                ],
+                "template": [
+                    "垃圾桶图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5885,
+                "y": -804
+            }
+        }
+    },
+    "寻找删除邮件按钮_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    571,
+                    213,
+                    123,
+                    214
+                ],
+                "template": [
+                    "垃圾桶图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5292,
+                "y": -1172
+            }
+        }
+    },
+    "开始定位邮件位置": {
+        "next": [
+            "[JumpBack]进入具体邮件",
+            "无剩余邮件了"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4228,
+                "y": -672
+            }
+        }
+    },
+    "执行一次全部删除-邮箱": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    147,
+                    1198,
+                    96,
+                    40
+                ],
+                "expected": [
+                    "全部删除"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "next": [
+            "确认删除所有邮件",
+            "[JumpBack]执行一次全部删除-邮箱_第二次",
+            "邮箱是空的"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3319,
+                "y": -544
+            }
+        }
+    },
+    "执行一次全部删除-邮箱_第二次": {
+        "max_hit": 3,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    147,
+                    1198,
+                    96,
+                    40
+                ],
+                "expected": [
+                    "全部删除"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3672,
+                "y": -332
+            }
+        }
+    },
+    "无剩余邮件了": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    290,
+                    629,
+                    136,
+                    88
+                ],
+                "expected": [
+                    "无邮件"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4477,
+                "y": -242
+            }
+        }
+    },
+    "确认删除单个邮件": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    500,
+                    795,
+                    161,
+                    167
+                ],
+                "template": [
+                    "对勾确认图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "next": [
+            "[JumpBack]确认删除单个邮件_第二次",
+            "[JumpBack]寻找删除邮件按钮_第三次",
+            "单个邮件删除结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5489,
+                "y": -896
+            }
+        }
+    },
+    "确认删除单个邮件_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    500,
+                    795,
+                    161,
+                    167
+                ],
+                "template": [
+                    "对勾确认图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5863,
+                "y": -1131
+            }
+        }
+    },
+    "确认删除所有邮件": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    500,
+                    795,
+                    161,
+                    167
+                ],
+                "template": [
+                    "对勾确认图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]确认删除所有邮件_第二次",
+            "开始定位邮件位置"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3818,
+                "y": -631
+            }
+        }
+    },
+    "确认删除所有邮件_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    500,
+                    795,
+                    161,
+                    167
+                ],
+                "template": [
+                    "对勾确认图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4093,
+                "y": -445
+            }
+        }
+    },
+    "确认单个邮件奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    224,
+                    1164,
+                    276,
+                    81
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5033,
+                "y": -125
             }
         }
     },
@@ -54,72 +373,6 @@
             }
         }
     },
-    "进入邮件界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    42,
-                    918,
-                    630,
-                    59
-                ],
-                "expected": [
-                    "邮件"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "next": [
-            "点击领取全部-邮件",
-            "[JumpBack]进入邮件界面_错误处理"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2741,
-                "y": -619
-            }
-        }
-    },
-    "点击领取全部-邮件": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    391,
-                    1168,
-                    210,
-                    60
-                ],
-                "expected": [
-                    "全部"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3232,
-                "y": -565
-            }
-        }
-    },
-    "$__mpe_external_返回主界面开始_领取邮箱奖励": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3430,
-                "y": -79
-            }
-        }
-    },
     "进入主菜单-领取邮箱奖励_错误处理": {
         "recognition": {
             "type": "TemplateMatch",
@@ -146,6 +399,67 @@
             }
         }
     },
+    "进入具体邮件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    558,
+                    223,
+                    138,
+                    912
+                ],
+                "expected": [
+                    "过期"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "next": [
+            "寻找删除邮件按钮",
+            "[JumpBack]领取单个邮件奖励",
+            "[JumpBack]确认单个邮件奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4597,
+                "y": -682
+            }
+        }
+    },
+    "进入邮件界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    42,
+                    918,
+                    630,
+                    59
+                ],
+                "expected": [
+                    "邮件"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "[JumpBack]进入邮件界面_错误处理",
+            "执行一次全部删除-邮箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2741,
+                "y": -619
+            }
+        }
+    },
     "进入邮件界面_错误处理": {
         "recognition": {
             "type": "OCR",
@@ -169,6 +483,69 @@
             "position": {
                 "x": 3032,
                 "y": -316
+            }
+        }
+    },
+    "领取单个邮件奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    451,
+                    841,
+                    196,
+                    129
+                ],
+                "template": [
+                    "可领取奖励图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 5048,
+                "y": -462
+            }
+        }
+    },
+    "领取邮箱奖励开始": {
+        "next": [
+            "进入主菜单-领取邮箱奖励",
+            "[JumpBack]返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2005,
+                "y": -5
+            }
+        }
+    },
+    "邮箱是空的": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    253,
+                    611,
+                    219,
+                    112
+                ],
+                "expected": [
+                    "暂无邮件"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3647,
+                "y": -826
             }
         }
     }

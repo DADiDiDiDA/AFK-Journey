@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -3592,
-                "y": 525,
-                "zoom": 0.65
+                "x": -4387,
+                "y": 421,
+                "zoom": 0.76
             },
             "filename": "领取并赠送友情点",
-            "version": "v1.7.3"
+            "version": "v1.10.1"
         }
     },
     "领取并赠送友情点开始": {
@@ -105,6 +105,7 @@
         },
         "post_delay": 3000,
         "next": [
+            "[JumpBack]领取并赠送友情点_第二次",
             "返回主界面开始"
         ],
         "$__mpe_code": {
@@ -171,6 +172,33 @@
             "position": {
                 "x": 6407,
                 "y": -412
+            }
+        }
+    },
+    "领取并赠送友情点_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    293,
+                    1050,
+                    273,
+                    75
+                ],
+                "expected": [
+                    "收取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6989,
+                "y": -705
             }
         }
     }
