@@ -50,6 +50,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "确认删除单个邮件",
             "[JumpBack]寻找删除邮件按钮_第二次"
@@ -79,7 +80,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5885,
@@ -105,6 +106,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5292,
@@ -142,7 +144,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "确认删除所有邮件",
             "[JumpBack]执行一次全部删除-邮箱_第二次",
@@ -174,6 +176,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 3672,
@@ -224,7 +227,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "[JumpBack]确认删除单个邮件_第二次",
             "[JumpBack]寻找删除邮件按钮_第三次",
@@ -255,7 +258,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5863,
@@ -281,6 +284,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]确认删除所有邮件_第二次",
             "开始定位邮件位置"
@@ -310,6 +314,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4093,
@@ -417,7 +422,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "寻找删除邮件按钮",
             "[JumpBack]领取单个邮件奖励",
@@ -504,7 +509,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5048,
