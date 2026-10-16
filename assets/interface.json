@@ -6,7 +6,7 @@
     "license": "MIT",
     "welcome": "欢迎使用剑与远征：启程自动化助手；不会领取每日任务奖励欧，因为次日会发邮箱里",
     "version": "1.1.8",
-    
+
     "controller": [
         {
             "name": "安卓端",
@@ -14,7 +14,7 @@
             "display_short_side": 720
         }
     ],
-    
+
     "resource": [
         {
             "name": "官服",
@@ -23,7 +23,7 @@
             ]
         }
     ],
-    
+
     "task": [
         {
             "name": "🎮 进入游戏",
@@ -36,7 +36,7 @@
             "name": "🤝 领取并赠送友情点",
             "entry": "领取并赠送友情点开始",
             "default_check": true,
-            "description": "在社交界面领取好友赠送的友情点并回赠"
+            "description": "领取并回赠友情点"
         },
         {
             "name": "⚡ 领取快速挂机奖励",
@@ -45,41 +45,41 @@
             "description": "领取挂机收益并使用一次快速挂机次数"
         },
         {
-            "name": "📧 领取邮箱奖励",
-            "entry": "领取邮箱奖励开始",
-            "default_check": true,
-            "description": "领取邮箱内所有奖励"
-        },
-        {
             "name": "🏟️ 每日竞技场一次",
             "entry": "每日竞技场一次开始",
             "default_check": true,
-            "description": "完成一次竞技场挑战（无门票时自动退出）"
+            "description": "完成一次竞技场挑战"
         },
         {
             "name": "🛒 商城购买一次",
             "entry": "商城购买一次开始",
             "default_check": true,
-            "description": "购买公会商店-每日刷新中的全英雄招募和史诗招募物品（今日买过了会自动退出）"
+            "description": "购买公会商店-每日刷新中的全英雄招募和史诗招募物品"
+        },
+        {
+            "name": "📧 领取邮箱奖励",
+            "entry": "领取邮箱奖励开始",
+            "default_check": true,
+            "description": "领取邮箱内所有奖励"
         }
     ],
-    
+
     "option": {
         "启动模式": {
             "type": "select",
             "label": "启动模式",
-            "description": "选择进入游戏的方式",
+            "description": "选择启动游戏的方式",
             "default_case": "no_start",
             "cases": [
                 {
                     "name": "need_start",
                     "label": "🚀 启动游戏",
-                    "description": "告诉模拟器启动游戏"
+                    "description": "让模拟器启动游戏"
                 },
                 {
                     "name": "no_start",
                     "label": "📋 不需要启动游戏",
-                    "description": "不用启动游戏"
+                    "description": "不用启动游戏，用设置里的方式启动"
                 }
             ]
         }
