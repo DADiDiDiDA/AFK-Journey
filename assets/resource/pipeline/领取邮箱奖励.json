@@ -53,7 +53,7 @@
         "post_delay": 2000,
         "next": [
             "确认删除单个邮件",
-            "[JumpBack]寻找删除邮件按钮_第二次"
+            "[JumpBack]寻找删除邮件按钮-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -62,7 +62,7 @@
             }
         }
     },
-    "寻找删除邮件按钮_第三次": {
+    "寻找删除邮件按钮-第三次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -88,7 +88,7 @@
             }
         }
     },
-    "寻找删除邮件按钮_第二次": {
+    "寻找删除邮件按钮-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -147,7 +147,7 @@
         "post_delay": 2000,
         "next": [
             "确认删除所有邮件",
-            "[JumpBack]执行一次全部删除-邮箱_第二次",
+            "[JumpBack]执行一次全部删除-邮箱-第二次",
             "邮箱是空的"
         ],
         "$__mpe_code": {
@@ -157,7 +157,7 @@
             }
         }
     },
-    "执行一次全部删除-邮箱_第二次": {
+    "执行一次全部删除-邮箱-第二次": {
         "max_hit": 3,
         "recognition": {
             "type": "OCR",
@@ -229,8 +229,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "[JumpBack]确认删除单个邮件_第二次",
-            "[JumpBack]寻找删除邮件按钮_第三次",
+            "[JumpBack]确认删除单个邮件-第二次",
+            "[JumpBack]寻找删除邮件按钮-第三次",
             "单个邮件删除结束"
         ],
         "$__mpe_code": {
@@ -240,7 +240,7 @@
             }
         }
     },
-    "确认删除单个邮件_第二次": {
+    "确认删除单个邮件-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -286,7 +286,7 @@
         },
         "post_delay": 2000,
         "next": [
-            "[JumpBack]确认删除所有邮件_第二次",
+            "[JumpBack]确认删除所有邮件-第二次",
             "开始定位邮件位置"
         ],
         "$__mpe_code": {
@@ -296,7 +296,7 @@
             }
         }
     },
-    "确认删除所有邮件_第二次": {
+    "确认删除所有邮件-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -369,7 +369,7 @@
         "post_delay": 3000,
         "next": [
             "进入邮件界面",
-            "[JumpBack]进入主菜单-领取邮箱奖励_错误处理"
+            "[JumpBack]进入主菜单-领取邮箱奖励-错误处理"
         ],
         "$__mpe_code": {
             "position": {
@@ -378,7 +378,7 @@
             }
         }
     },
-    "进入主菜单-领取邮箱奖励_错误处理": {
+    "进入主菜单-领取邮箱奖励-错误处理": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -455,7 +455,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "[JumpBack]进入邮件界面_错误处理",
+            "[JumpBack]进入邮件界面-错误处理",
             "执行一次全部删除-邮箱"
         ],
         "$__mpe_code": {
@@ -465,7 +465,7 @@
             }
         }
     },
-    "进入邮件界面_错误处理": {
+    "进入邮件界面-错误处理": {
         "recognition": {
             "type": "OCR",
             "param": {

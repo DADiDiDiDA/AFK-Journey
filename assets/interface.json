@@ -74,12 +74,14 @@
                 {
                     "name": "need_start",
                     "label": "🚀 启动游戏",
-                    "description": "让模拟器启动游戏"
+                    "description": "让模拟器启动游戏",
+                    "pipeline_override": { "进入游戏开始": { "next": ["需要启动游戏"] } }
                 },
                 {
                     "name": "no_start",
                     "label": "📋 不需要启动游戏",
-                    "description": "不用启动游戏，用设置里的方式启动"
+                    "description": "不用启动游戏，用设置里的方式启动",
+                    "pipeline_override": { "进入游戏开始": { "next": ["不需要启动游戏"] } }
                 }
             ]
         }

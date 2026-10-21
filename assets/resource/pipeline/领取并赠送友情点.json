@@ -46,7 +46,7 @@
         "post_delay": 3000,
         "next": [
             "选择社交界面",
-            "[JumpBack]进入主菜单-友情点_错误处理"
+            "[JumpBack]进入主菜单-友情点-错误处理"
         ],
         "$__mpe_code": {
             "position": {
@@ -76,7 +76,7 @@
         "post_delay": 3000,
         "next": [
             "领取并赠送友情点",
-            "[JumpBack]选择社交界面_错误处理"
+            "[JumpBack]选择社交界面-错误处理"
         ],
         "$__mpe_code": {
             "position": {
@@ -105,7 +105,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "[JumpBack]领取并赠送友情点_第二次",
+            "[JumpBack]领取并赠送友情点-第二次",
             "返回主界面开始"
         ],
         "$__mpe_code": {
@@ -123,7 +123,7 @@
             }
         }
     },
-    "进入主菜单-友情点_错误处理": {
+    "进入主菜单-友情点-错误处理": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -149,7 +149,7 @@
             }
         }
     },
-    "选择社交界面_错误处理": {
+    "选择社交界面-错误处理": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -175,7 +175,7 @@
             }
         }
     },
-    "领取并赠送友情点_第二次": {
+    "领取并赠送友情点-第二次": {
         "max_hit": 2,
         "recognition": {
             "type": "OCR",
