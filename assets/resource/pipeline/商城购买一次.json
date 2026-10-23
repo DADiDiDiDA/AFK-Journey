@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -5962,
-                "y": 391,
-                "zoom": 0.69
+                "x": -4966,
+                "y": 384,
+                "zoom": 0.59
             },
             "filename": "商城购买一次",
             "version": "v2.1.0"
@@ -15,8 +15,8 @@
     "$__mpe_external_返回主界面开始_商城购买一次": {
         "$__mpe_code": {
             "position": {
-                "x": 9774,
-                "y": 360
+                "x": 9859,
+                "y": 663
             }
         }
     },
@@ -179,8 +179,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8842,
-                "y": -637
+                "x": 8801,
+                "y": -590
             }
         }
     },
@@ -262,8 +262,8 @@
         "post_delay": 3000,
         "$__mpe_code": {
             "position": {
-                "x": 8902,
-                "y": -349
+                "x": 8921,
+                "y": -263
             }
         }
     },

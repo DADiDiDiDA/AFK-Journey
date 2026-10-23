@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1790552808595,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\领取邮箱奖励.json",
             "savedViewport": {
-                "x": -562,
-                "y": 423,
-                "zoom": 0.29
+                "x": -1397,
+                "y": 409,
+                "zoom": 0.59
             },
             "filename": "领取邮箱奖励",
-            "version": "v2.0.3"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_返回主界面开始_领取邮箱奖励": {
@@ -27,8 +23,8 @@
     "单个邮件删除结束": {
         "$__mpe_code": {
             "position": {
-                "x": 5906,
-                "y": -446
+                "x": 6169,
+                "y": -561
             }
         }
     },
@@ -57,8 +53,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5055,
-                "y": -847
+                "x": 5164,
+                "y": -921
             }
         }
     },
@@ -83,8 +79,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 5885,
-                "y": -804
+                "x": 6168,
+                "y": -913
             }
         }
     },
@@ -109,8 +105,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 5292,
-                "y": -1172
+                "x": 5513,
+                "y": -1210
             }
         }
     },
@@ -204,8 +200,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4477,
-                "y": -242
+                "x": 4577,
+                "y": -444
             }
         }
     },
@@ -235,8 +231,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5489,
-                "y": -896
+                "x": 5699,
+                "y": -961
             }
         }
     },
@@ -261,8 +257,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 5863,
-                "y": -1131
+                "x": 6182,
+                "y": -1249
             }
         }
     },
@@ -343,8 +339,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 5033,
-                "y": -125
+                "x": 5219,
+                "y": -281
             }
         }
     },
@@ -430,8 +426,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4597,
-                "y": -682
+                "x": 4664,
+                "y": -836
             }
         }
     },
@@ -512,8 +508,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 5048,
-                "y": -462
+                "x": 5207,
+                "y": -559
             }
         }
     },
@@ -524,8 +520,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2005,
-                "y": -5
+                "x": 1591,
+                "y": -51
             }
         }
     },
@@ -549,8 +545,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3647,
-                "y": -826
+                "x": 3706,
+                "y": -881
             }
         }
     }
