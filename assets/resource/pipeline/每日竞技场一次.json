@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -2258,
-                "y": 187,
-                "zoom": 0.45
+                "x": -2350,
+                "y": 471,
+                "zoom": 0.65
             },
             "filename": "每日竞技场一次",
             "version": "v2.1.0"
@@ -31,7 +31,8 @@
                     115
                 ],
                 "expected": [
-                    "关闭"
+                    "关闭",
+                    "退出"
                 ]
             }
         },
@@ -41,8 +42,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 4771,
-                "y": -570
+                "x": 4788,
+                "y": -769
             }
         }
     },
@@ -301,7 +302,8 @@
         "post_delay": 3000,
         "next": [
             "选择常规玩法",
-            "[JumpBack]进入玩法目录界面-竞技场-第二次"
+            "[JumpBack]进入玩法目录界面-竞技场-第二次",
+            "[JumpBack]关闭弹窗-竞技场"
         ],
         "$__mpe_code": {
             "position": {
@@ -331,7 +333,8 @@
         "post_delay": 3000,
         "next": [
             "选择竞技场",
-            "[JumpBack]选择常规玩法-第二次"
+            "[JumpBack]选择常规玩法-第二次",
+            "[JumpBack]关闭弹窗-竞技场"
         ],
         "$__mpe_code": {
             "position": {
