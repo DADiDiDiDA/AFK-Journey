@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -2133,
-                "y": 750,
-                "zoom": 0.75
+                "x": -1137,
+                "y": -33,
+                "zoom": 0.61
             },
             "filename": "返回主界面",
             "version": "v2.1.0"
@@ -33,8 +33,8 @@
         "post_delay": 3000,
         "$__mpe_code": {
             "position": {
-                "x": 3314,
-                "y": 476
+                "x": 3309,
+                "y": 320
             }
         }
     },
@@ -155,6 +155,7 @@
             "判断是否在主界面",
             "[JumpBack]点击加载游戏",
             "[JumpBack]下方点击关闭方式",
+            "[JumpBack]是不是新赛季阶段开启",
             "[JumpBack]尝试按Esc退出"
         ],
         "$__mpe_code": {
@@ -197,8 +198,8 @@
         "post_delay": 10000,
         "$__mpe_code": {
             "position": {
-                "x": 3277,
-                "y": 128
+                "x": 3300,
+                "y": 44
             }
         }
     },
@@ -261,6 +262,31 @@
             "position": {
                 "x": 3914,
                 "y": -540
+            }
+        }
+    },
+    "是不是新赛季阶段开启": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    278,
+                    981,
+                    170,
+                    89
+                ],
+                "expected": [
+                    "启程"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3255,
+                "y": 590
             }
         }
     }
