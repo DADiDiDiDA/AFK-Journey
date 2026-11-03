@@ -79,7 +79,7 @@
             "type": "select",
             "label": "启动模式",
             "description": "选择启动游戏的方式",
-            "default_case": "no_start",
+            "default_case": "need_start",
             "cases": [
                 {
                     "name": "need_start",
