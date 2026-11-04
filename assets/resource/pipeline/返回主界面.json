@@ -3,10 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1793801921132,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -875,
-                "y": 233,
-                "zoom": 0.61
+                "x": -1036,
+                "y": 257,
+                "zoom": 0.53
             },
             "filename": "返回主界面",
             "version": "v2.1.0"
@@ -38,6 +42,17 @@
             }
         }
     },
+    "不需要启动游戏": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2149,
+                "y": 80
+            }
+        }
+    },
     "判断是否在主界面": {
         "recognition": {
             "type": "OCR",
@@ -65,6 +80,39 @@
             }
         }
     },
+    "判断是否在主界面-第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    1142,
+                    155,
+                    137
+                ],
+                "expected": [
+                    "当前进度"
+                ]
+            }
+        },
+        "next": [
+            "已经位于主界面-任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3581,
+                "y": -280
+            }
+        }
+    },
+    "取消退出游戏结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3989,
+                "y": -517
+            }
+        }
+    },
     "尝试按Esc退出": {
         "max_hit": 25,
         "action": {
@@ -86,8 +134,33 @@
     "已经位于主界面-任务结束": {
         "$__mpe_code": {
             "position": {
-                "x": 4071,
-                "y": -278
+                "x": 4073,
+                "y": -227
+            }
+        }
+    },
+    "是不是新赛季阶段开启": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    278,
+                    981,
+                    170,
+                    89
+                ],
+                "expected": [
+                    "启程"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3255,
+                "y": 590
             }
         }
     },
@@ -118,6 +191,32 @@
             }
         }
     },
+    "点击加载游戏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    224,
+                    1020,
+                    285,
+                    67
+                ],
+                "expected": [
+                    "开始游戏"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 10000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3300,
+                "y": 44
+            }
+        }
+    },
     "确认取消退出游戏": {
         "recognition": {
             "type": "TemplateMatch",
@@ -142,8 +241,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3517,
-                "y": -829
+                "x": 3532,
+                "y": -874
             }
         }
     },
@@ -172,34 +271,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1864,
-                "y": -64
-            }
-        }
-    },
-    "点击加载游戏": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    224,
-                    1020,
-                    285,
-                    67
-                ],
-                "expected": [
-                    "开始游戏"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 10000,
-        "$__mpe_code": {
-            "position": {
-                "x": 3300,
-                "y": 44
+                "x": 1734,
+                "y": -79
             }
         }
     },
@@ -216,77 +289,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2331,
-                "y": -238
-            }
-        }
-    },
-    "不需要启动游戏": {
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2279,
-                "y": 55
-            }
-        }
-    },
-    "判断是否在主界面-第二次": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    4,
-                    1142,
-                    155,
-                    137
-                ],
-                "expected": [
-                    "当前进度"
-                ]
-            }
-        },
-        "next": [
-            "已经位于主界面-任务结束"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3572,
-                "y": -325
-            }
-        }
-    },
-    "取消退出游戏结束": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3914,
-                "y": -540
-            }
-        }
-    },
-    "是不是新赛季阶段开启": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    278,
-                    981,
-                    170,
-                    89
-                ],
-                "expected": [
-                    "启程"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 3255,
-                "y": 590
+                "x": 2156,
+                "y": -246
             }
         }
     }

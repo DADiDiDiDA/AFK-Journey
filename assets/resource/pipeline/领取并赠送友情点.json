@@ -3,25 +3,24 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1793801922783,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\领取并赠送友情点.json",
             "savedViewport": {
-                "x": -4387,
-                "y": 421,
-                "zoom": 0.76
+                "x": -3695,
+                "y": 314,
+                "zoom": 0.7
             },
             "filename": "领取并赠送友情点",
-            "version": "v1.10.1"
+            "version": "v2.1.0"
         }
     },
-    "领取并赠送友情点开始": {
-        "post_delay": 4000,
-        "next": [
-            "进入主菜单-友情点",
-            "[JumpBack]返回主界面开始"
-        ],
+    "$__mpe_external_返回主界面开始_领取并赠送友情点": {
         "$__mpe_code": {
             "position": {
-                "x": 5421,
-                "y": -102
+                "x": 7073,
+                "y": -57
             }
         }
     },
@@ -55,6 +54,32 @@
             }
         }
     },
+    "进入主菜单-友情点-错误处理": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    608,
+                    1177,
+                    107,
+                    101
+                ],
+                "template": [
+                    "主菜单特征.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6113,
+                "y": -317
+            }
+        }
+    },
     "选择社交界面": {
         "recognition": {
             "type": "OCR",
@@ -82,6 +107,32 @@
             "position": {
                 "x": 6089,
                 "y": -676
+            }
+        }
+    },
+    "选择社交界面-错误处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    16,
+                    1057,
+                    687,
+                    71
+                ],
+                "expected": [
+                    "社交"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6407,
+                "y": -412
             }
         }
     },
@@ -115,66 +166,6 @@
             }
         }
     },
-    "$__mpe_external_返回主界面开始_领取并赠送友情点": {
-        "$__mpe_code": {
-            "position": {
-                "x": 7073,
-                "y": -57
-            }
-        }
-    },
-    "进入主菜单-友情点-错误处理": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    608,
-                    1177,
-                    107,
-                    101
-                ],
-                "template": [
-                    "主菜单特征.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 6113,
-                "y": -317
-            }
-        }
-    },
-    "选择社交界面-错误处理": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    16,
-                    1057,
-                    687,
-                    71
-                ],
-                "expected": [
-                    "社交"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 6407,
-                "y": -412
-            }
-        }
-    },
     "领取并赠送友情点-第二次": {
         "max_hit": 2,
         "recognition": {
@@ -199,6 +190,19 @@
             "position": {
                 "x": 6989,
                 "y": -705
+            }
+        }
+    },
+    "领取并赠送友情点开始": {
+        "post_delay": 4000,
+        "next": [
+            "进入主菜单-友情点",
+            "[JumpBack]返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5362,
+                "y": -116
             }
         }
     }

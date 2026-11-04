@@ -3,10 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1793801925736,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\领取快速挂机奖励.json",
             "savedViewport": {
-                "x": -8348,
-                "y": 459,
-                "zoom": 0.78
+                "x": -4894,
+                "y": 483,
+                "zoom": 0.53
             },
             "filename": "领取快速挂机奖励",
             "version": "v2.1.0"
@@ -15,8 +19,8 @@
     "$__mpe_external_返回主界面开始_领取快速挂机奖励": {
         "$__mpe_code": {
             "position": {
-                "x": 11844,
-                "y": 132
+                "x": 11904,
+                "y": 157
             }
         }
     },
@@ -28,8 +32,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9355,
-                "y": -176
+                "x": 9110,
+                "y": -216
             }
         }
     },
@@ -58,8 +62,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10803,
-                "y": -320
+                "x": 10772,
+                "y": -279
             }
         }
     },
@@ -152,39 +156,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10438,
-                "y": -645
-            }
-        }
-    },
-    "选择挂机界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    9,
-                    1196,
-                    116,
-                    79
-                ],
-                "expected": [
-                    "当前进度"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "next": [
-            "选择快速挂机的宝箱",
-            "开始领取快速挂机宝箱",
-            "[JumpBack]选择挂机界面-第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 9833,
-                "y": -473
+                "x": 10320,
+                "y": -665
             }
         }
     },
@@ -213,8 +186,39 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 10813,
-                "y": -758
+                "x": 10796,
+                "y": -769
+            }
+        }
+    },
+    "选择挂机界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    9,
+                    1196,
+                    116,
+                    79
+                ],
+                "expected": [
+                    "当前进度"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "选择快速挂机的宝箱",
+            "[JumpBack]选择挂机界面-第二次",
+            "开始领取快速挂机宝箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9675,
+                "y": -464
             }
         }
     },
@@ -239,8 +243,8 @@
         "post_delay": 3000,
         "$__mpe_code": {
             "position": {
-                "x": 10175,
-                "y": -772
+                "x": 10017,
+                "y": -764
             }
         }
     }

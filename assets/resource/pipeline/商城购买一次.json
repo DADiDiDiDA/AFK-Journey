@@ -3,10 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1793801917539,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\商城购买一次.json",
             "savedViewport": {
-                "x": -4966,
-                "y": 384,
-                "zoom": 0.59
+                "x": -2813,
+                "y": 449,
+                "zoom": 0.4
             },
             "filename": "商城购买一次",
             "version": "v2.1.0"
@@ -15,8 +19,8 @@
     "$__mpe_external_返回主界面开始_商城购买一次": {
         "$__mpe_code": {
             "position": {
-                "x": 9859,
-                "y": 663
+                "x": 10187,
+                "y": 802
             }
         }
     },
@@ -57,8 +61,34 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9401,
-                "y": -281
+                "x": 9739,
+                "y": -430
+            }
+        }
+    },
+    "确认商城物品购买-第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    256,
+                    1143,
+                    285,
+                    106
+                ],
+                "expected": [
+                    "购买"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10067,
+                "y": -471
             }
         }
     },
@@ -89,6 +119,32 @@
             "position": {
                 "x": 7679,
                 "y": -430
+            }
+        }
+    },
+    "进入主界面-商城购买一次-第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    608,
+                    1166,
+                    108,
+                    111
+                ],
+                "template": [
+                    "主菜单特征.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 7954,
+                "y": -700
             }
         }
     },
@@ -124,6 +180,33 @@
             }
         }
     },
+    "选择工会商店开始-第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    14,
+                    156,
+                    103,
+                    789
+                ],
+                "expected": [
+                    "公会"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 9026,
+                "y": -300
+            }
+        }
+    },
     "选择每日商店商品-全英雄": {
         "recognition": {
             "type": "TemplateMatch",
@@ -154,6 +237,32 @@
             }
         }
     },
+    "选择每日商店商品-全英雄-第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    149,
+                    469,
+                    570,
+                    250
+                ],
+                "template": [
+                    "全英雄招募图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 9151,
+                "y": -1109
+            }
+        }
+    },
     "选择每日商店商品-史诗招募": {
         "recognition": {
             "type": "TemplateMatch",
@@ -181,6 +290,32 @@
             "position": {
                 "x": 8801,
                 "y": -590
+            }
+        }
+    },
+    "选择每日商店商品-史诗招募-第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    149,
+                    469,
+                    570,
+                    250
+                ],
+                "template": [
+                    "史诗招募图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 9121,
+                "y": -762
             }
         }
     },
@@ -237,137 +372,6 @@
             "position": {
                 "x": 8342,
                 "y": -570
-            }
-        }
-    },
-    "选择工会商店开始-第二次": {
-        "max_hit": 2,
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    14,
-                    156,
-                    103,
-                    789
-                ],
-                "expected": [
-                    "公会"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 8921,
-                "y": -263
-            }
-        }
-    },
-    "进入主界面-商城购买一次-第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    608,
-                    1166,
-                    108,
-                    111
-                ],
-                "template": [
-                    "主菜单特征.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 7954,
-                "y": -700
-            }
-        }
-    },
-    "选择每日商店商品-史诗招募-第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    149,
-                    469,
-                    570,
-                    250
-                ],
-                "template": [
-                    "史诗招募图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 9158,
-                "y": -677
-            }
-        }
-    },
-    "选择每日商店商品-全英雄-第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    149,
-                    469,
-                    570,
-                    250
-                ],
-                "template": [
-                    "全英雄招募图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 9151,
-                "y": -1109
-            }
-        }
-    },
-    "确认商城物品购买-第二次": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    256,
-                    1143,
-                    285,
-                    106
-                ],
-                "expected": [
-                    "购买"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 3000,
-        "$__mpe_code": {
-            "position": {
-                "x": 9759,
-                "y": -314
             }
         }
     }
