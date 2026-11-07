@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793801921132,
+            "lastSyncTime": 1794011089738,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -1036,
-                "y": 257,
-                "zoom": 0.53
+                "x": -1001,
+                "y": -6,
+                "zoom": 0.55
             },
             "filename": "返回主界面",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "下方点击关闭方式": {
@@ -255,7 +255,9 @@
             "[JumpBack]点击加载游戏",
             "[JumpBack]下方点击关闭方式",
             "[JumpBack]是不是新赛季阶段开启",
-            "[JumpBack]尝试按Esc退出"
+            "[JumpBack]尝试按Esc退出",
+            "[JumpBack]无法处理的情况",
+            "[JumpBack]尝试按Esc退出_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -291,6 +293,35 @@
             "position": {
                 "x": 2156,
                 "y": -246
+            }
+        }
+    },
+    "尝试按Esc退出_第二次": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3084,
+                "y": 1323
+            }
+        }
+    },
+    "无法处理的情况": {
+        "max_hit": 1,
+        "action": {
+            "type": "Screencap"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3169,
+                "y": 1067
             }
         }
     }
