@@ -3,17 +3,25 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794105240607,
+            "lastSyncTime": 1794107649065,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -960,
-                "y": -37,
-                "zoom": 0.56
+                "x": -658,
+                "y": 430,
+                "zoom": 0.39
             },
             "filename": "返回主界面",
             "version": "v2.1.1"
+        }
+    },
+    "$__mpe_anchor_启动游戏一次_返回主界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3572,
+                "y": 900
+            }
         }
     },
     "下方点击关闭方式": {
@@ -125,7 +133,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "[Anchor][JumpBack]启动游戏一次"
+            "[Anchor]启动游戏一次"
         ],
         "$__mpe_code": {
             "position": {
@@ -327,14 +335,6 @@
             "position": {
                 "x": 2156,
                 "y": -246
-            }
-        }
-    },
-    "$__mpe_anchor_启动游戏一次_返回主界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3572,
-                "y": 900
             }
         }
     }
