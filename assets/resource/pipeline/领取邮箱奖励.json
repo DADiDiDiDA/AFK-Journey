@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794883371441,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\AFK-Journey\\assets\\resource\\pipeline\\领取邮箱奖励.json",
             "savedViewport": {
-                "x": -1397,
-                "y": 409,
-                "zoom": 0.59
+                "x": -1457,
+                "y": 472,
+                "zoom": 0.43
             },
             "filename": "领取邮箱奖励",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "$__mpe_external_返回主界面开始_领取邮箱奖励": {
@@ -113,7 +117,8 @@
     "开始定位邮件位置": {
         "next": [
             "[JumpBack]进入具体邮件",
-            "无剩余邮件了"
+            "无剩余邮件了",
+            "无可处理邮件任务结束"
         ],
         "$__mpe_code": {
             "position": {
@@ -339,8 +344,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 5219,
-                "y": -281
+                "x": 5199,
+                "y": -228
             }
         }
     },
@@ -420,14 +425,42 @@
         },
         "post_delay": 2000,
         "next": [
+            "版本更新通知邮件",
             "寻找删除邮件按钮",
             "[JumpBack]领取单个邮件奖励",
-            "[JumpBack]确认单个邮件奖励"
+            "[JumpBack]确认单个邮件奖励",
+            "[JumpBack]进入具体邮件_第二次"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 4664,
                 "y": -836
+            }
+        }
+    },
+    "进入具体邮件_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    558,
+                    223,
+                    138,
+                    912
+                ],
+                "expected": [
+                    "过期"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5157,
+                "y": 54
             }
         }
     },
@@ -487,6 +520,31 @@
             }
         }
     },
+    "邮箱是空的": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    253,
+                    611,
+                    219,
+                    112
+                ],
+                "expected": [
+                    "暂无邮件"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3706,
+                "y": -881
+            }
+        }
+    },
     "领取单个邮件奖励": {
         "recognition": {
             "type": "TemplateMatch",
@@ -525,18 +583,18 @@
             }
         }
     },
-    "邮箱是空的": {
+    "版本更新通知邮件": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    253,
-                    611,
-                    219,
-                    112
+                    127,
+                    279,
+                    290,
+                    68
                 ],
                 "expected": [
-                    "暂无邮件"
+                    "版本更新通知"
                 ]
             }
         },
@@ -545,8 +603,19 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3706,
-                "y": -881
+                "x": 4954,
+                "y": -1098
+            }
+        }
+    },
+    "无可处理邮件任务结束": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4542,
+                "y": -160
             }
         }
     }
