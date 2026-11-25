@@ -67,6 +67,7 @@
         }
     },
     "确认商城物品购买-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -123,6 +124,7 @@
         }
     },
     "进入主界面-商城购买一次-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -238,6 +240,7 @@
         }
     },
     "选择每日商店商品-全英雄-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -294,6 +297,7 @@
         }
     },
     "选择每日商店商品-史诗招募-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -350,6 +354,7 @@
         }
     },
     "选择进入商城界面-错误处理": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

@@ -162,6 +162,7 @@
         }
     },
     "选择快速挂机的宝箱-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -223,6 +224,7 @@
         }
     },
     "选择挂机界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
